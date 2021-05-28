@@ -2,6 +2,7 @@ package com.majed.currencyapp.ui.view.activities
 
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.majed.currencyapp.anagrams.AnagramsChecker
 import com.majed.currencyapp.data.consts.Params.Companion.RATE
 import com.majed.currencyapp.data.model.modified.ErrorHandler
 import com.majed.currencyapp.data.model.service.Currency
@@ -44,6 +45,9 @@ class MainActivity : BaseActivity<CurrencyViewModel>(), RatesAdapter.RatesCallBa
 
         viewInit()
         updateView()
+
+        println("AnagramsChecker : " + AnagramsChecker("debit card", "bad credit").check())
+        println("AnagramsChecker : " + AnagramsChecker("punishments", "nine thumps").check())
 
         currencyVM.currencyResult.observe(this, this::currencyResult)
     }

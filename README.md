@@ -7,3 +7,12 @@
 2- Anagram Checker solution :
    Click [here](https://github.com/majededdin/CurrencyApp/blob/master/app/src/main/java/com/majed/currencyapp/anagrams/AnagramsChecker.kt) to see the solution function.
    
+
+3- Fibonacci numbers :
+
+      *Recursive apprach
+            Click [here](https://github.com/majededdin/CurrencyApp/blob/master/app/src/main/java/com/majed/currencyapp/fibonacci/FibonacciRecursiveNumber.kt) to see the solution function.
+       
+      *Iterative approach
+            Click [here](https://github.com/majededdin/CurrencyApp/blob/master/app/src/main/java/com/majed/currencyapp/fibonacci/FibonacciIterativeNumber.kt) to see the solution function.
+   

@@ -4,3 +4,6 @@
 
    3 * (13 - 9) = 12
    
+2- Anagram Checker solution :
+   Click [here](https://github.com/majededdin/CurrencyApp/blob/master/app/src/main/java/com/majed/currencyapp/anagrams/AnagramsChecker.kt) to see the solution function.
+   

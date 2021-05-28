@@ -10,6 +10,8 @@ import com.majed.currencyapp.data.model.service.RatesWithName
 import com.majed.currencyapp.data.remote.ApiResponse
 import com.majed.currencyapp.data.remote.ApiStatus
 import com.majed.currencyapp.databinding.ActivityMainBinding
+import com.majed.currencyapp.fibonacci.FibonacciIterativeNumber
+import com.majed.currencyapp.fibonacci.FibonacciRecursiveNumber
 import com.majed.currencyapp.ui.base.BaseActivity
 import com.majed.currencyapp.ui.view.adapters.RatesAdapter
 import com.majed.currencyapp.ui.viewModel.CurrencyViewModel
@@ -46,8 +48,12 @@ class MainActivity : BaseActivity<CurrencyViewModel>(), RatesAdapter.RatesCallBa
         viewInit()
         updateView()
 
-        println("AnagramsChecker : " + AnagramsChecker("debit card", "bad credit").check())
-        println("AnagramsChecker : " + AnagramsChecker("punishments", "nine thumps").check())
+        // TODO: 5/28/2021 unComment this for check all task function
+//        println("AnagramsChecker : " + AnagramsChecker("debit card", "bad credit").check())
+//        println("AnagramsChecker : " + AnagramsChecker("punishments", "nine thumps").check())
+
+//        println("FibonacciRecursiveNumber : " + FibonacciRecursiveNumber.recursive(20))
+//        println("FibonacciIterativeNumber : " + FibonacciIterativeNumber.iterative(20))
 
         currencyVM.currencyResult.observe(this, this::currencyResult)
     }

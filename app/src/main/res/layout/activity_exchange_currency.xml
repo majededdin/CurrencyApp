@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.activities.ExchangeCurrencyActivity">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_baseValue"
+            style="@style/EditText"
+            android:layout_width="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:focusable="true"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@id/txt_baseName"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_baseName"
+            style="@style/TextView.ParagraphColored"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="viewEnd"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@id/edit_baseValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/edit_baseValue"
+            app:layout_constraintTop_toTopOf="@id/edit_baseValue"
+            tools:text="@tools:sample/date/hhmmss" />
+
+
+        <View
+            android:id="@+id/view"
+            style="@style/View"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_baseValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_rateValue"
+            style="@style/TextView.ParagraphColored"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@id/txt_rateName"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view"
+            tools:text="@tools:sample/date/hhmmss" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_rateName"
+            style="@style/TextView.ParagraphColored"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="viewEnd"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/edit_baseValue"
+            app:layout_constraintTop_toBottomOf="@id/view"
+            tools:text="@tools:sample/date/hhmmss" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
